@@ -19,6 +19,7 @@ const CrytoDetails = () => {
     const {data: coinHistory} = useGetCryptoHistoryQuery({coinId, timePeriod});
     const cryptoDetails = data?.data?.coin;
 
+    window.scrollTo({ top: 0,});
     
     if(isFetching) return <Loading />
 

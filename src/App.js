@@ -6,6 +6,7 @@ import './App.css';
 
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, CrytoDetails, News } from './components';
 const App = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     return (
         <div className = 'app'>
            <div className = 'navbar'>

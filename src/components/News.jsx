@@ -15,7 +15,7 @@ const News = ({simplified}) => {
     const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
     const { data: cryptoNews } = useGetCryptoNewsQuery({newsCategory, count: simplified ? 6 : 12});
     const { data } = useGetCryptosQuery(100);
-
+    window.scrollTo({ top: 0,});
     if(!cryptoNews?.value) return <Loading />
 
     return (

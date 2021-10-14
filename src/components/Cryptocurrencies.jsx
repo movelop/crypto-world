@@ -17,6 +17,8 @@ const Cryptocurrencies = ({simplified}) => {
         setCryptos(filteredCrypto)
     }, [cryptoList, searchTerm])
 
+    window.scrollTo({ top: 0,});
+
     if (isFetching) return <Loading />
 
     return (

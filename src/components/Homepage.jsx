@@ -11,7 +11,7 @@ const { Title } = Typography
 const Homepage = () => {
     const { data, isFetching } = useGetCryptosQuery(10);
     const globalStats = data?.data?.stats
-
+    window.scrollTo({ top: 0,});
 
     if(isFetching) return <Loading />;
     return (

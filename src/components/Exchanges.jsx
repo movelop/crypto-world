@@ -13,6 +13,7 @@ const Exchanges = () => {
     const { data, isFetching } = useGetExchangeQuery();
     const exchangeList = data?.data?.exchanges;
     
+    window.scrollTo({ top: 0,});
 
     if(isFetching) return <Loading />
 
